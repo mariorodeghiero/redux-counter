@@ -1,7 +1,17 @@
+/**
+ *
+ * action creators , uma função que retorna um objeto
+ */
 
-export const increment = {
-    type: 'INCREMENT'
-}
-export const decrement = {
-    type: 'DECREMENT'
-}
+export const increment = value => {
+  return {
+    type: 'INCREMENT',
+    value: value
+  };
+};
+export const decrement = value => {
+  return {
+    type: 'DECREMENT',
+    value: value
+  };
+};
